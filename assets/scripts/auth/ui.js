@@ -1,7 +1,7 @@
 'use strict'
 
 const store = require('../store.js')
-const gameEvents = require('../events.js')
+// const gameEvents = require('../events.js')
 
 const signUpSuccess = function () {
   $('#display-sign-up-message').html('Sign Up Successful')
@@ -21,8 +21,7 @@ const signInSuccess = function (response) {
   $('#sign-in-form').addClass('hidden')
   $('#change-password-form').removeClass('hidden')
   $('#sign-out-button').removeClass('hidden')
-  $('#game-board').removeClass('hidden')
-  // gameEvents.onNewGame('click')
+  $('#newGame').removeClass('hidden')
 }
 
 const signOutSuccess = function () {

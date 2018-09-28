@@ -70,20 +70,37 @@ const onSelectCell = function (event) {
     $('#game-message').html('Invalid Move! Try again')
     return
   }
-  // set html to currentPlayer
+  // console.log('onSelectCell store.game.id is:  ', store.game.id)
+  // console.log('onSelectCell store.game.cells is:  ', store.game.cells)
+  // console.log('onSelectCell store.game.over is:  ', store.game.over)
+  // console.log('onSelectCell store.game.player_x.id is:  ', store.game.player_x.id)
+  // console.log('onSelectCell store.game.player_x.email is:  ', store.game.player_x.email)
+  // console.log('onSelectCell store.game.player_o is:  ', store.game.player_o)
+
+  // set html box to currentPlayer 'X' or 'O'
   $(event.target).html(currentPlayer)
   // set js grid to currentPlayer
   grid[$(event.target).data('id')] = currentPlayer
   // console.log(grid)
+  store.game.cells = grid
+  console.log('onSelectCell store.game.cells is:  ', store.game.cells)
+
+  store.game.index = $(event.target).data('id')
+  store.game.value = currentPlayer
+
+  // api.updateGame(store)
+  // console.log('showGame() in newGameSuccess: ', api.showGame(store))
   // test for winner after each move
   const winStatus = isWinningMove(grid, $(event.target).data('id'))
   if (winStatus) {
     $('#game-message').html(currentPlayer + ' Wins! Game Over')
+    store.game.over = true
   }
   // test for tie
   const cellsLeft = emptyCellTest(grid)
   if (!winStatus && !cellsLeft) {
     $('#game-message').html('Tie! Game Over')
+    store.game.over = true
   }
   // alternate moves between playerX and playerO
   if (currentPlayer === playerX) {
@@ -91,6 +108,10 @@ const onSelectCell = function (event) {
   } else {
     currentPlayer = playerX
   }
+
+  console.log('onSelectCell store.game is:  ', store.game)
+  api.updateGame(store.game)
+  console.log('onSelectCell api.showGame() ', api.showGame(store.game.id))
 }
 
 const onNewGame = function (event) {
@@ -109,17 +130,17 @@ const onNewGame = function (event) {
     .then(ui.newGameSuccess)
     .catch(ui.newGameFailure)
 
-  // this console.log never gets executed
+  // this console.log throws and error "Uncaught TypeError: Cannot read property 'cells' of undefined"
   // console.log('onNewGame store.game.cells is:  ', store.game.cells)
 }
 
 const onGameStats = function (event) {
   event.preventDefault()
-  $('#game-stats-message').html('Put Game Stats here...')
+  // $('#game-stats-message').html('Number of games played ')
   const data = getFormFields(event.target)
   api.gameStats(data)
-    .then(ui.gameStatsSuccess)
-    .catch(ui.gameStatsFailure)
+  // .then(ui.gameStatsSuccess)
+  // .catch(ui.gameStatsFailure)
 }
 
 module.exports = {
