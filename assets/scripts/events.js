@@ -70,12 +70,6 @@ const onSelectCell = function (event) {
     $('#game-message').html('Invalid Move! Try again')
     return
   }
-  // console.log('onSelectCell store.game.id is:  ', store.game.id)
-  // console.log('onSelectCell store.game.cells is:  ', store.game.cells)
-  // console.log('onSelectCell store.game.over is:  ', store.game.over)
-  // console.log('onSelectCell store.game.player_x.id is:  ', store.game.player_x.id)
-  // console.log('onSelectCell store.game.player_x.email is:  ', store.game.player_x.email)
-  // console.log('onSelectCell store.game.player_o is:  ', store.game.player_o)
 
   // set html box to currentPlayer 'X' or 'O'
   $(event.target).html(currentPlayer)
@@ -88,8 +82,6 @@ const onSelectCell = function (event) {
   store.game.index = $(event.target).data('id')
   store.game.value = currentPlayer
 
-  // api.updateGame(store)
-  // console.log('showGame() in newGameSuccess: ', api.showGame(store))
   // test for winner after each move
   const winStatus = isWinningMove(grid, $(event.target).data('id'))
   if (winStatus) {
@@ -118,7 +110,6 @@ const onNewGame = function (event) {
   // prevent auto-page refresh
   event.preventDefault()
   console.log('onNewGame ran!')
-  // console.log('onNewGame store.game.cells is:  ', store.game.cells)
   // reset js board
   grid = ['', '', '', '', '', '', '', '', '']
   // reset starting player to X
@@ -129,18 +120,16 @@ const onNewGame = function (event) {
   api.newGame(data)
     .then(ui.newGameSuccess)
     .catch(ui.newGameFailure)
-
-  // this console.log throws and error "Uncaught TypeError: Cannot read property 'cells' of undefined"
-  // console.log('onNewGame store.game.cells is:  ', store.game.cells)
 }
 
 const onGameStats = function (event) {
   event.preventDefault()
-  // $('#game-stats-message').html('Number of games played ')
+
   const data = getFormFields(event.target)
-  api.gameStats(data)
-  // .then(ui.gameStatsSuccess)
-  // .catch(ui.gameStatsFailure)
+
+  api.indexGame(data)
+    .then(ui.gameStatsSuccess)
+    .catch(ui.gameStatsFailure)
 }
 
 module.exports = {

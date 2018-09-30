@@ -19,19 +19,27 @@ const newGameSuccess = function (data) {
 // // TODO: complete updateGameSuccess
 const updateGameSuccess = function (data) {}
 
+const gameStatsSuccess = function (data) {
+  store.games = data.games
+  console.log('gameStatsSuccess ran. Data is:  ', data)
+  console.log('store.games is:  ', store.games)
+  // store.games = indexGame(data)
+  const numOfGames = store.games.length
+  // console.log('gameStats() store.games is: ', store.games)
+  console.log('gameStats() numOfGames is: ' + numOfGames)
+  $('#game-stats-message').html('Number of games played = ' + numOfGames)
+
+// $('#game-stats-message').html(`Number of games played = ${store.games.length}`)
+}
+
 // // TODO: complete updateGameFailure
 const updateGameFailure = function (data) {}
 
 // // TODO: complete newGameFailure
-const newGameFailure = function () {}
+const newGameFailure = function (data) {}
 
 // // TODO: complete gameStatsFailure
-const gameStatsSuccess = function (stats) {
-  // $('#game-stats-message').html(`Number of games played = ${store.games.length}`)
-}
-
-// // TODO: complete gameStatsFailure
-const gameStatsFailure = function () {}
+const gameStatsFailure = function (data) {}
 
 module.exports = {
   newGameSuccess,

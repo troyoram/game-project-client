@@ -2,7 +2,7 @@
 
 const config = require('./config.js')
 const store = require('./store.js')
-const ui = require('./ui.js')
+// const ui = require('./ui.js')
 
 const newGame = function (data) {
   console.log('newGame data: ', data)
@@ -18,7 +18,6 @@ const newGame = function (data) {
 
 const showGame = function (data) {
   console.log('showGame data: ', data)
-  // console.log('showGame store.game.id: ', store.game.id)
   return $.ajax({
     url: config.apiUrl + `/games/${store.game.id}`,
     method: 'GET',
@@ -61,21 +60,9 @@ const indexGame = function (data) {
   })
 }
 
-// // TODO: complete gameStats()
-const gameStats = function (data) {
-  store.games = indexGame(data)
-  const numOfGames = store.games.Array.length
-  console.log('gameStats() store.games is: ', store.games)
-  console.log('gameStats() numOfGames is: ' + numOfGames)
-  $('#game-stats-message').html('Number of games played = ' + numOfGames)
-  // ui.gameStatsSuccess(numOfGames)
-  // console.log('gameStats() store.games is: ', store.games)
-}
-
 module.exports = {
   newGame,
   showGame,
   updateGame,
-  indexGame,
-  gameStats
+  indexGame
 }

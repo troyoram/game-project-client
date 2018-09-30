@@ -10,13 +10,10 @@ const signUpSuccess = function () {
 }
 
 const signInSuccess = function (response) {
+  store.user = response.user
   $('#display-sign-in-message').html('Sign In Successful')
   $('#display-sign-in-message').css('color', 'green')
   $('#sign-in-form').trigger('reset')
-  // console.log('store before adding user key', store)
-  store.user = response.user
-  // console.log('store after adding user key', store)
-  // console.log('store.user.token', store.user.token)
   $('#sign-up-form').addClass('hidden')
   $('#sign-in-form').addClass('hidden')
   $('#change-password-form').removeClass('hidden')
