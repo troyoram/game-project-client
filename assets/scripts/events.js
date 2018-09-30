@@ -109,7 +109,6 @@ const onSelectCell = function (event) {
 const onNewGame = function (event) {
   // prevent auto-page refresh
   event.preventDefault()
-  console.log('onNewGame ran!')
   // reset js board
   grid = ['', '', '', '', '', '', '', '', '']
   // reset starting player to X

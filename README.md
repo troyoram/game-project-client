@@ -1,12 +1,24 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+# Tic-Tac-Toe Project
 
-# browser-template
+The Tic-Tac-Toe game is the first project assigned to students in General
+Assembly's Web Development Immersive (WDI) course.  The student is tasked with
+using material learned in class during the first two weeks to create and deploy
+a web application to log in using auhtenticated credentials and participate in
+playing Tic-Tac-Toe games alternating between Player "X" and Player "O".
 
-A template for starting front-end projects. Webpack for `require` system, build
-pipeline, and development server. Boostrap and Handlebars.js included. No
-front-end frameworks included.
+## Getting Started
 
-## Installation
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+Node Package Manager
+
+```sh
+npm install
+```
+
+### Installing
 
 1. [Download](../../archive/master.zip) this template.
 1. Move to the `wdi/projects` directory, then unzip the template directory with
@@ -29,85 +41,39 @@ front-end frameworks included.
    how to push to Github, refer to the section on Github entitled "…or push an existing
    repository from the command line." Further documentation can be found [here](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
 
-## Structure
+## Testing
 
-Developers should store JavaScript files in [`assets/scripts`](assets/scripts).
-The "manifest" or entry-point is
-[`assets/scripts/app.js`](assets/scripts/app.js). In general, only
-application initialization goes in this file. It's normal for developers to
-start putting all code in this file, but encourage them to break out different
-responsibilities and use the `require` syntax put references where they're
-needed.
+There were no requirments for developing automated tests for this project.  As
+a result, no automated tests exist the the Tic=Tac-Toe project.
 
-Developers should set `apiUrls.production` and `apiUrls.development` in
-[`assets/scripts/config.js`](assets/scripts/config.js).  With
-`apiUrls` set, developers may rely on `apiUrl` as the base for API
-URLs.
+### Coding style tests
 
-Developers should store styles in [`assets/styles`](assets/styles) and load them
-from [`assets/styles/index.scss`](assets/styles/index.scss). Bootstrap version 3 is
-included in this template.
+Linter for Atom was used to enforce coding style
 
-Developers should use [getFormFields](get-form-fields.md) to retrieve form data
-to send to an API.
+## Deployment
 
-To deploy a browser-template based SPA, run `grunt deploy`.
+grunt deploy was used to deploy to github
 
-## Adding Images
+## Built With
 
-To add images to your project, you must store them in the `public` directory.
-To use the image in HTML or CSS, write the path to the image like this:
+No web frameworks, dependency management, or RSS feeds were used for this project
 
-```html
-<img src="public/cat.jpg">
-```
-or
-```css
-#my-cool-div {
-  background-image: url('public/cat.jpg')
-}
-```
+## Contributing
 
-Note that there's no `./` or `/` in front of `public/filename.jpg`.
+Please read [CONTRIBUTING.md] for details on the process for submitting pull requests.
 
-## Adding Fonts
+## Versioning
 
-To add custom fonts to your app, you can either use a CDN like Google Fonts, or
-you can download the fonts and save them in the `public` directory. If you use
-the former method, follow the directions on the website providing the fonts.
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-For local fonts, put the files in `public`, and then import and use them in a
-`.scss` file like this:
+## Authors
 
-```scss
-@font-face {
-  font-family: 'Nature Beauty';
-  src: url('public/Nature-Beauty.ttf') format('truetype');
-}
+* **Troy Oram** - *Initial work* - [GitHub](https://troyoram.github.io/game-project-client/)
 
-.element-with-custom-font {
-  font-family: 'Nature Beauty';
-}
-```
+## License
 
-## Tasks
+This project is licensed is licensed under a CC-BY-NC-SA 4.0 license - see the [LICENSE.md](LICENSE.md) file for details
 
-Developers should run these often!
+## Acknowledgments
 
-- `grunt nag` or just `grunt`: runs code quality analysis tools on your code
-    and complains
-- `grunt make-standard`: reformats all your code in the JavaScript Standard Style
-- `grunt <server|serve|s>`: generates bundles, watches, and livereloads
-- `grunt build`: place bundled styles and scripts where `index.html` can find
-    them
-
-## Additional Resources
-
-- [Modern Javascript Explained for Dinosaurs](https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70)
-- [Making Sense of Front End Build Tools](https://medium.freecodecamp.org/making-sense-of-front-end-build-tools-3a1b3a87043b)
-
-## [License](LICENSE)
-
-1. All content is licensed under a CC­BY­NC­SA 4.0 license.
-1. All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+* Compliments to Jack Allan on stack overflow for the tic-tac-toe winner determination code
