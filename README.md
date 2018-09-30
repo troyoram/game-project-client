@@ -44,7 +44,7 @@ npm install
 ## Testing
 
 There were no requirments for developing automated tests for this project.  As
-a result, no automated tests exist the the Tic=Tac-Toe project.
+a result, no automated tests exist the the Tic-Tac-Toe project.
 
 ### Coding style tests
 
@@ -60,11 +60,11 @@ No web frameworks, dependency management, or RSS feeds were used for this projec
 
 ## Contributing
 
-Please read [CONTRIBUTING.md] for details on the process for submitting pull requests.
+Please read [CONTRIBUTING.md]https://troyoram.github.io/game-project-client/CONTRIBUTING.md for details on the process for submitting pull requests.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+git commit and git push was used for versioning. For the versions available, see the [tags on this repository](https://troyoram.github.io/game-project-client/).
 
 ## Authors
 
@@ -72,8 +72,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed is licensed under a CC-BY-NC-SA 4.0 license - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed is licensed under a CC-BY-NC-SA 4.0 license - see the [LICENSE.md](https://troyoram.github.io/game-project-client/LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Compliments to Jack Allan on stack overflow for the tic-tac-toe winner determination code
+* Compliments to Jack Allan on [stack overflow](https://stackoverflow.com/a/24376236) for the tic-tac-toe winner determination code
