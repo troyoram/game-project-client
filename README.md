@@ -60,7 +60,7 @@ No web frameworks, dependency management, or RSS feeds were used for this projec
 
 ## Contributing
 
-Please read [CONTRIBUTING.md]https://troyoram.github.io/game-project-client/CONTRIBUTING.md for details on the process for submitting pull requests.
+Please read [CONTRIBUTING.md](https://troyoram.github.io/game-project-client/CONTRIBUTING.md) for details on the process for submitting pull requests.
 
 ## Versioning
 
