@@ -28,11 +28,12 @@ Other Tools: Node Package Manager
 
 ## Wireframe
 
-[Wireframe](https://troyoram.github.io/game-project-client/public/game-project-planning.docx)
+![Wireframe](https://troyoram.github.io/game-project-client/public/wireframe.png)
 
-# Schedule
+## Schedule
 
 Tuesday, September 25th
+
 Planning
  1.  Review game-project-scope-study
  2.  User Stories
@@ -75,7 +76,7 @@ Authentication
  6.  All API calls have success or failure messages
 
 Game API
- 1.   Review query-ajax-post
+ 1.  Review query-ajax-post
  2.  Create Game, start new game (curl then web app)
  3.  Update Game, play the game (curl then web app)
  4.  Get Games (curl then web app)
