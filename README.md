@@ -16,78 +16,78 @@ Other Tools: Node Package Manager
 
 ## User Stories
 
-1.  As a user, I want to login with email and password, so that my ID is authenticated.
-2.  As a user, I want to change my password, so that it can be more meaningful.
-3.  As a user, I want logout capability, so that game session will be closed.
-4.  As a user, I want player active status, so that current player is known
-5.  As a user, I want invalid cell choices disabled, so that cheating is prohibited
-6.  As a user, I want game status displayed, so that win tie, or game in progress is known
-7.  As a user, I want current game disabled upon win or tie, so that cheating is prohibited
-8.  As a user, I want to select a new game, so that game playing can continue
-9.  As a user, I want clearly defined graphics, so that game is visually appealing.
+1. As a user, I want to login with email and password, so that my ID is authenticated.
+1. As a user, I want to change my password, so that it can be more meaningful.
+1. As a user, I want logout capability, so that game session will be closed.
+1. As a user, I want player active status, so that current player is known
+1. As a user, I want invalid cell choices disabled, so that cheating is prohibited
+1. As a user, I want game status displayed, so that win tie, or game in progress is known
+1. As a user, I want current game disabled upon win or tie, so that cheating is prohibited
+1. As a user, I want to select a new game, so that game playing can continue
+1. As a user, I want clearly defined graphics, so that game is visually appealing.
 
 ## Wireframe
 
-![Wireframe](https://troyoram.github.io/game-project-client/public/wireframe.png)
+[Wireframe](https://troyoram.github.io/game-project-client/public/wireframe.png)
 
 ## Schedule
 
-Tuesday, September 25th
+### Tuesday, September 25th
 
 Planning
- 1.  Review game-project-scope-study
- 2.  User Stories
- 3.  Review project-planning-wireframes-practice
- 4.  Wire Frames
+1. Review game-project-scope-study
+1. User Stories
+1. Review project-planning-wireframes-practice
+1. Wire Frames
 
 Set Up
- 1.  Download Browser Template
- 2.  Create a Github Repository
- 3.  Deploy to Github Pages
+1. Download Browser Template
+1. Create a Github Repository
+1. Deploy to Github Pages
 
-Wednesday, September 26th
+### Wednesday, September 26th
 Game Engine
- 1.  Create Empty Board in JS
- 2.  Create Current Player
- 3.  Add Current Player to Board
- 4.  Current Player rotates between x and o
- 5.  Cannot choose already occupied spots
- 6.  Check Board for Winner
+1. Create Empty Board in JS
+1. Create Current Player
+1. Add Current Player to Board
+1. Current Player rotates between x and o
+1. Cannot choose already occupied spots
+1. Check Board for Winner
 
-Thursday, September 27th
+### Thursday, September 27th
 Game UI
- 1.  Design a game board
- 2.  Add a click handler for when a space on the game board is clicked
- 3.  If the user clicks on a valid space then add their X or O
- 4.  Do not allow users to add an X or O to an invalid space
- 5.  Do not allow users to add an X or O to any spaces after the game is over
- 6.  Update the game engine when the game board is updated
- 7.  Add messaging for the user when the turn changes
- 8.  Add messaging for the user when the user clicks on an invalid space
- 9.  Add messaging for the user when the game is over (win or draw)
+1. Design a game board
+1. Add a click handler for when a space on the game board is clicked
+1. If the user clicks on a valid space then add their X or O
+1. Do not allow users to add an X or O to an invalid space
+1. Do not allow users to add an X or O to any spaces after the game is over
+1. Update the game engine when the game board is updated
+1. Add messaging for the user when the turn changes
+1. Add messaging for the user when the user clicks on an invalid space
+1. Add messaging for the user when the game is over (win or draw)
 
-Friday, September 28th
+### Friday, September 28th
 Authentication
- 1.  Review api-token-auth
- 2.  Sign Up (curl then web app)
- 3.  Sign In (curl then web app)
- 4.  Change Password (curl then web app)
- 5.  Sign Out (curl then web page)
- 6.  All API calls have success or failure messages
+1. Review api-token-auth
+1. Sign Up (curl then web app)
+1. Sign In (curl then web app)
+1. Change Password (curl then web app)
+1. Sign Out (curl then web page)
+1. All API calls have success or failure messages
 
 Game API
- 1.  Review query-ajax-post
- 2.  Create Game, start new game (curl then web app)
- 3.  Update Game, play the game (curl then web app)
- 4.  Get Games (curl then web app)
+1. Review query-ajax-post
+1. Create Game, start new game (curl then web app)
+1. Update Game, play the game (curl then web app)
+1. Get Games (curl then web app)
 
-Saturday-Monday, September 29th-October 1st
+### Saturday-Monday, September 29th-October 1st
 Final Touches
- 1.  README
- 2.  Troubleshoot/Debug
- 3.  Style
+1. README
+1. Troubleshoot/Debug
+1. Style
 
-Tuesday, October 2nd
+### Tuesday, October 2nd
 Project Presentation
 
 ## Getting Started
