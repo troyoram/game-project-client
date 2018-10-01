@@ -6,6 +6,89 @@ using material learned in class during the first two weeks to create and deploy
 a web application to log in using auhtenticated credentials and participate in
 playing Tic-Tac-Toe games alternating between Player "X" and Player "O".
 
+The live version of the game can be found [here](https://troyoram.github.io/game-project-client/)
+
+## Technologies Used
+
+Browser: Google Chrome with DevTools
+Editor: Atom
+Other Tools: Node Package Manager
+
+## User Stories
+
+1.  As a user, I want to login with email and password, so that my ID is authenticated.
+2.  As a user, I want to change my password, so that it can be more meaningful.
+3.  As a user, I want logout capability, so that game session will be closed.
+4.  As a user, I want player active status, so that current player is known
+5.  As a user, I want invalid cell choices disabled, so that cheating is prohibited
+6.  As a user, I want game status displayed, so that win tie, or game in progress is known
+7.  As a user, I want current game disabled upon win or tie, so that cheating is prohibited
+8.  As a user, I want to select a new game, so that game playing can continue
+9.  As a user, I want clearly defined graphics, so that game is visually appealing.
+
+## Wireframe
+
+[Wireframe](https://troyoram.github.io/game-project-client/public/game-project-planning.docx)
+
+# Schedule
+
+Tuesday, September 25th
+Planning
+ 1.  Review game-project-scope-study
+ 2.  User Stories
+ 3.  Review project-planning-wireframes-practice
+ 4.  Wire Frames
+
+Set Up
+ 1.  Download Browser Template
+ 2.  Create a Github Repository
+ 3.  Deploy to Github Pages
+
+Wednesday, September 26th
+Game Engine
+ 1.  Create Empty Board in JS
+ 2.  Create Current Player
+ 3.  Add Current Player to Board
+ 4.  Current Player rotates between x and o
+ 5.  Cannot choose already occupied spots
+ 6.  Check Board for Winner
+
+Thursday, September 27th
+Game UI
+ 1.  Design a game board
+ 2.  Add a click handler for when a space on the game board is clicked
+ 3.  If the user clicks on a valid space then add their X or O
+ 4.  Do not allow users to add an X or O to an invalid space
+ 5.  Do not allow users to add an X or O to any spaces after the game is over
+ 6.  Update the game engine when the game board is updated
+ 7.  Add messaging for the user when the turn changes
+ 8.  Add messaging for the user when the user clicks on an invalid space
+ 9.  Add messaging for the user when the game is over (win or draw)
+
+Friday, September 28th
+Authentication
+ 1.  Review api-token-auth
+ 2.  Sign Up (curl then web app)
+ 3.  Sign In (curl then web app)
+ 4.  Change Password (curl then web app)
+ 5.  Sign Out (curl then web page)
+ 6.  All API calls have success or failure messages
+
+Game API
+ 1.   Review query-ajax-post
+ 2.  Create Game, start new game (curl then web app)
+ 3.  Update Game, play the game (curl then web app)
+ 4.  Get Games (curl then web app)
+
+Saturday-Monday, September 29th-October 1st
+Final Touches
+ 1.  README
+ 2.  Troubleshoot/Debug
+ 3.  Style
+
+Tuesday, October 2nd
+Project Presentation
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
