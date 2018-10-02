@@ -43,17 +43,11 @@ const onSelectCell = function (event) {
   if (winStatus) {
     $('#game-message').html(currentPlayer + ' Wins! Game Over')
     store.game.over = true
-    // // TODO: add code here to change cell background color of winLine
+    // change cell background color of winLine
     // console.log('onSelectCell winLine = ', store.winLine)
-    // const id = 2
-    // $('[data-id="store.winLine[0]"]').css('background-color', 'red')
-    // $(event.target).data(id).css('background-color', 'red')
-    // $().css('background-color', 'red')
-    // $('#1').css('background-color', 'red')
-    // $('.box').id('#id').css('background-color', 'red')
-    // $("div").find([data-id='VARIABLE_HERE']).css('background-color', 'red')
-    // $(num).css('background-color', 'red')
-    // $('#store.winLine'[2]).css('background-color', 'red')
+    $('#' + store.winLine[0]).css('background-color', 'red')
+    $('#' + store.winLine[1]).css('background-color', 'red')
+    $('#' + store.winLine[2]).css('background-color', 'red')
   }
   // test for tie
   const cellsLeft = gameLogic.emptyCellTest(grid)
