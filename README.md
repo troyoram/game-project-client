@@ -138,7 +138,7 @@ npm install
 
 ## Testing
 
-There were no requirments for developing automated tests for this project.  As
+There were no requirements for developing automated tests for this project.  As
 a result, no automated tests exist for the the Tic-Tac-Toe project.
 
 ### Coding style tests
