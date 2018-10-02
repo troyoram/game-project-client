@@ -1,5 +1,9 @@
 'use strict'
 
+const store = require('./store.js')
+
+// let winLine = []
+
 /* Compliments of Jack Allan on stack overflow
  * Determines if the last move resulted in a win for either player
  * board: is an array representing the board
@@ -30,6 +34,9 @@ const isWinningMove = function (board, lastMove) {
   for (let i = 0; i < winLines[lastMove].length; i++) {
     const line = winLines[lastMove][i]
     if (player === board[line[0]] && player === board[line[1]]) {
+      // winLine = [player, board[line[0]], board[line[1]]]
+      store.winLine = [lastMove, winLines[lastMove][i][0], winLines[lastMove][i][1]]
+      // console.log('game-logic winLine ' + store.winLine)
       return true
     }
   }

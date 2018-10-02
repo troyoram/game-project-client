@@ -10,9 +10,9 @@ The live version of the game can be found [here](https://troyoram.github.io/game
 
 ## Technologies Used
 
-Browser: Google Chrome with DevTools
-Editor: Atom
-Other Tools: Node Package Manager
+1. Browser: Google Chrome with DevTools
+1. Editor: Atom
+1. Other Tools: Node Package Manager
 
 ## User Stories
 
@@ -89,6 +89,17 @@ Final Touches
 
 ### Tuesday, October 2nd
 Project Presentation
+
+## Problem Resolution
+
+As problems with design and development were encountered, a new issued was created
+and addressed through General Assembly's Game Project [Issue Queue](https://git.generalassemb.ly/ga-wdi-boston/game-project/issues)
+
+## Unsolved problems to be fixed in future releases
+
+1. Tic-Tac-Toe board shifts up and down when game messages are displayed and cleared
+2. Unable to change background color of boxes denoting winning line
+3. Game logic may report a win when a tie occurs some move sequences
 
 ## Getting Started
 

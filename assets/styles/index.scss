@@ -1,6 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 
-$background-color: #919ade;
+
+// $background-color: #919ade;
+$background-color: #4dc3ff; // Maya Blue
 $font-color: #dfdfdf;
 $white: #fff;
 $grey: rgb(128, 128, 128);
@@ -24,6 +26,8 @@ button {
   border: 1px solid $white;
   color: $font-color;
   display: flex;
+  font-family: fantasy;
+  font-size: 50px;
   height: 80px;
   justify-content: center;
 }
@@ -38,4 +42,22 @@ button {
 
 .hidden {
   display: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  // The image used
+  background-image: url('public/water.jpg');
+
+  // Center and scale the image nicely
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // Full height
+  height: 100%;
 }
