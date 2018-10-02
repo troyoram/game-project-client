@@ -99,7 +99,7 @@ and addressed through General Assembly's Game Project [Issue Queue](https://git.
 
 1. Tic-Tac-Toe board shifts up and down when game messages are displayed and cleared
 2. Unable to change background color of boxes denoting winning line
-3. Game logic may report a win when a tie occurs some move sequences
+3. Game logic may report a win when a tie occurs with some move sequences
 
 ## Getting Started
 
@@ -139,7 +139,7 @@ npm install
 ## Testing
 
 There were no requirments for developing automated tests for this project.  As
-a result, no automated tests exist the the Tic-Tac-Toe project.
+a result, no automated tests exist for the the Tic-Tac-Toe project.
 
 ### Coding style tests
 
@@ -147,7 +147,7 @@ Linter for Atom was used to enforce coding style
 
 ## Deployment
 
-grunt deploy was used to deploy to github
+'grunt deploy' was used to deploy to github
 
 ## Built With
 
@@ -155,19 +155,19 @@ No web frameworks, dependency management, or RSS feeds were used for this projec
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://troyoram.github.io/game-project-client/CONTRIBUTING.md) for details on the process for submitting pull requests.
+Please read [CONTRIBUTING.md](https://github.com/troyoram/game-project-client/blob/master/CONTRIBUTING.md) for details on the process for submitting pull requests.
 
 ## Versioning
 
-git commit and git push was used for versioning. For the versions available, see the [tags on this repository](https://troyoram.github.io/game-project-client/).
+'git commit' and 'git push' were used for versioning. For the versions available, see the [tags on this repository](https://github.com/troyoram/game-project-client/).
 
 ## Authors
 
-* **Troy Oram** - *Initial work* - [GitHub](https://troyoram.github.io/game-project-client/)
+* **Troy Oram** - *Initial work* - [GitHub](https://github.com/troyoram/game-project-client/)
 
 ## License
 
-This project is licensed is licensed under a CC-BY-NC-SA 4.0 license - see the [LICENSE.md](https://troyoram.github.io/game-project-client/LICENSE.md) file for details
+This project is licensed is licensed under a CC-BY-NC-SA 4.0 license - see the [LICENSE.md](https://github.com/troyoram/game-project-client/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
