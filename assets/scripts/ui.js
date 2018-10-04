@@ -14,6 +14,8 @@ const newGameSuccess = function (data) {
   $('#game-message').html('')
   // reset game stats messages
   $('.game-stat-msg').html('')
+  // reset cell background color
+  $('.box').css('background-color', 'grey')
   // unhide tic-tac-toe board
   $('#game-board').removeClass('hidden')
 }

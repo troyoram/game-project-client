@@ -8,6 +8,12 @@ const signUpSuccess = function () {
   $('#sign-up-form').trigger('reset')
 }
 
+const signUpFailure = function () {
+  $('#display-sign-up-message').html('Something went wrong, please try again')
+  $('#display-sign-up-message').css('color', 'red')
+  $('#sign-in-form').trigger('reset')
+}
+
 const signInSuccess = function (response) {
   store.user = response.user
   $('#display-sign-in-message').html('Sign In Successful')
@@ -20,6 +26,12 @@ const signInSuccess = function (response) {
   $('#newGame').removeClass('hidden')
 }
 
+const signInFailure = function () {
+  $('#display-sign-in-message').html('Something went wrong, please try again')
+  $('#display-sign-in-message').css('color', 'red')
+  $('#sign-in-form').trigger('reset')
+}
+
 const signOutSuccess = function () {
   $('#display-message').html('Sign Out successful')
   $('#display-message').css('color', 'green')
@@ -30,22 +42,24 @@ const signOutSuccess = function () {
   $('#game-board').addClass('hidden')
 }
 
-const signUpfailure = function () {
-  $('#display-sign-up-message').html('Something went wrong, please try again')
-  $('#display-sign-up-message').css('color', 'red')
-  $('#sign-in-form').trigger('reset')
+const changePasswordSuccess = function () {
+  $('#display-change-password-message').html('Password Change Successful')
+  $('#display-change-password-message').css('color', 'green')
+  $('#change-password-form').trigger('reset')
 }
 
-const signInFailure = function () {
-  $('#display-sign-in-message').html('Something went wrong, please try again')
-  $('#display-sign-in-message').css('color', 'red')
-  $('#sign-in-form').trigger('reset')
+const changePasswordFailure = function () {
+  $('#display-change-password-message').html('Something went wrong, please try again')
+  $('#display-change-password-message').css('color', 'red')
+  $('#change-password-form').trigger('reset')
 }
 
 module.exports = {
   signUpSuccess,
   signInSuccess,
   signOutSuccess,
-  signUpfailure,
-  signInFailure
+  signUpFailure,
+  signInFailure,
+  changePasswordSuccess,
+  changePasswordFailure
 }
