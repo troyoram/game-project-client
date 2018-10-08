@@ -4,7 +4,6 @@ const config = require('./config.js')
 const store = require('./store.js')
 
 const newGame = function (data) {
-  // console.log('newGame data: ', data)
   return $.ajax({
     url: config.apiUrl + '/games',
     method: 'POST',
@@ -16,7 +15,6 @@ const newGame = function (data) {
 }
 
 const showGame = function (data) {
-  // console.log('showGame data: ', data)
   return $.ajax({
     url: config.apiUrl + `/games/${store.game.id}`,
     method: 'GET',
@@ -28,8 +26,6 @@ const showGame = function (data) {
 }
 
 const updateGame = function (data) {
-  // console.log('updateGame data: ', data)
-  // console.log('updateGame store.game.id: ', store.game.id)
   return $.ajax({
     url: config.apiUrl + '/games/' + store.game.id,
     method: 'PATCH',
@@ -49,7 +45,6 @@ const updateGame = function (data) {
 }
 
 const indexGame = function (data) {
-  // console.log('indexGame data: ', data)
   return $.ajax({
     url: config.apiUrl + '/games',
     method: 'GET',

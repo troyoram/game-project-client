@@ -6,8 +6,6 @@ const gameLogic = require('./game-logic.js')
 
 const newGameSuccess = function (data) {
   store.game = data.game
-  // console.log('newGameSuccess ran. Data is:  ', data)
-  // console.log('store.game.cells is:  ', store.game.cells)
   // reset html board
   $('.box').html('')
   // reset game message
@@ -31,7 +29,6 @@ const gameStatsSuccess = function (data) {
   // calculate number of games completed
   let count = 0
   for (let i = 0; i < store.games.length; i++) {
-    // console.log('store.games[i].over: ', store.games[i].over)
     if (store.games[i].over === true) {
       count += 1
     }
@@ -45,7 +42,6 @@ const gameStatsSuccess = function (data) {
   let nowPlaying = ''
   for (let i = 0; i < store.games.length; i++) {
     if (store.games[i].over === true) {
-      // console.log('store.games[i].cells = ' + store.games[i].cells)
       for (let j = 0; j < store.games[i].cells.length; j++) {
         if (store.games[i].cells[j] !== '') {
           nowPlaying = store.games[i].cells[j]

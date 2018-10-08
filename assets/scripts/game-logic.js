@@ -36,7 +36,6 @@ const isWinningMove = function (board, lastMove) {
     if (player === board[line[0]] && player === board[line[1]]) {
       // winLine = [player, board[line[0]], board[line[1]]]
       store.winLine = [lastMove, winLines[lastMove][i][0], winLines[lastMove][i][1]]
-      // console.log('game-logic winLine ' + store.winLine)
       return true
     }
   }

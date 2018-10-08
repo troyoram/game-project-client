@@ -44,7 +44,6 @@ const onSelectCell = function (event) {
     $('#game-message').html(currentPlayer + ' Wins! Game Over')
     store.game.over = true
     // change cell background color of winLine
-    // console.log('onSelectCell winLine = ', store.winLine)
     $('#' + store.winLine[0]).css('background-color', 'red')
     $('#' + store.winLine[1]).css('background-color', 'red')
     $('#' + store.winLine[2]).css('background-color', 'red')
