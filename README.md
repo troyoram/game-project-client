@@ -1,7 +1,7 @@
 # Tic-Tac-Toe Project
 
 The Tic-Tac-Toe game is the first project assigned to students in General
-Assembly's Web Development Immersive (WDI) course.  The student is tasked with
+Assembly's Web Development Immersive (WDI) Course.  The student is tasked with
 using material learned in class during the first two weeks to create and deploy
 a web application to log in using authenticated credentials and participate in
 playing Tic-Tac-Toe games alternating between Player "X" and Player "O".
