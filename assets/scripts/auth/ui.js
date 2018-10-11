@@ -9,7 +9,7 @@ const signUpSuccess = function () {
 }
 
 const signUpFailure = function () {
-  $('#display-message').html('Something went wrong, please try again')
+  $('#display-message').html('Sign Up Failure, please try again')
   $('#display-message').css('color', 'red')
   $('#sign-in-form').trigger('reset')
 }
@@ -27,7 +27,7 @@ const signInSuccess = function (response) {
 }
 
 const signInFailure = function () {
-  $('#display-message').html('Something went wrong, please try again')
+  $('#display-message').html('Sign In Failure, please try again')
   $('#display-message').css('color', 'red')
   $('#sign-in-form').trigger('reset')
 }
@@ -49,7 +49,7 @@ const changePasswordSuccess = function () {
 }
 
 const changePasswordFailure = function () {
-  $('#display-message').html('Something went wrong, please try again')
+  $('#display-message').html('Password Change Failure, please try again')
   $('#display-message').css('color', 'red')
   $('#change-password-form').trigger('reset')
 }
